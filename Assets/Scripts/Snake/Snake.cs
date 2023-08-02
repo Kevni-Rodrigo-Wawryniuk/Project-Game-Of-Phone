@@ -130,7 +130,7 @@ public class Snake : MonoBehaviour
                 move = true;
             }
         }
-        /*
+
         if(Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
         {
             rigth = false;
@@ -159,23 +159,19 @@ public class Snake : MonoBehaviour
             down = false;
             up = false;
         }
-        */
 
-        if(rigth == true)
+        if (rigth == true)
         {
             direction = Direction.rigth;
-        }
-        if(left == true)
+        }else if(left == true)
         {
             direction = Direction.left;
-        }
-        if(down == true)
-        {
-            direction = Direction.down;
-        }
-        if(up == true)
+        }else if(up == true)
         {
             direction = Direction.up;
+        }else if(down == true)
+        {
+            direction = Direction.down;
         }
 
     }
