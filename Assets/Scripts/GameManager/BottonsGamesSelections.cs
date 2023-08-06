@@ -12,6 +12,23 @@ public class BottonsGamesSelections : MonoBehaviour
     public bool gameSnake;
     public bool gameFuckHumans;
 
+    [Header("Buy Game")]
+    [SerializeField] int buyFuckHumanGame;
+
+    private void Start()
+    {
+        StartProgram();
+    }
+    void StartProgram()
+    {
+        if(bottonsGamesSelections == null)
+        {
+            bottonsGamesSelections = this;
+        }
+
+      buyFuckHumanGame = PlayerPrefs.GetInt("FuckHuman", 0);
+    }
+
     private void Update()
     {
         GameASelection();
@@ -19,34 +36,62 @@ public class BottonsGamesSelections : MonoBehaviour
     // juego a seleccionar
     public void GameASelection()
     {
-        if(GameManager.gameManager.gamesPlay == 0)
+        if (GameManager.gameManager.gamesPlay == 0)
         {
             gameSnake = true;
             gameFuckHumans = false;
         }
-        else if(GameManager.gameManager.gamesPlay == 1)
+        else if (GameManager.gameManager.gamesPlay == 1)
         {
             gameFuckHumans = true;
-            gameSnake = false; 
+            gameSnake = false;
         }
     }
+
+
     // el juego de la viborita
     public void BottonGameSnake()
     {
-        if (gameSnake == true)
+        if (GameManager.gameManager.gamesPlay == 0)
         {
             GameManager.gameManager.mainMenu = false;
             GameManager.gameManager.settings = false;
             GameManager.gameManager.selectionGames = false;
+
             GameManager.gameManager.snakeGame = true;
             Debug.Log("Jugar al juego de la viborita");
         }
     }
+    //
+
+    // juego de la nave lanza humanos
+    // jugar juego de la nave
     public void BottonGameFuckHumans()
     {
-        if (gameFuckHumans == true)
+        if (GameManager.gameManager.gamesPlay == 1)
         {
-            Debug.Log("Probando Boton");
+            if (GameManager.gameManager.coinsScore >= 10 && buyFuckHumanGame == 0)
+            {
+                GameManager.gameManager.coinsScore -= 10;
+                buyFuckHumanGame = 1;
+                PlayerPrefs.SetInt("FuckHuman", buyFuckHumanGame);
+
+                Debug.Log("has desbloqueado este juego");
+            }
+            else if (GameManager.gameManager.coinsScore < 10 && buyFuckHumanGame == 0)
+            {
+                Debug.Log("Requieres conseguir 10 monedas para desbloquear este juego");
+            }
+
+            if (buyFuckHumanGame == 1)
+            {
+                Debug.Log("Jugar el juego de la nave");
+            }
+            else
+            {
+                Debug.Log("no puedes jugar");
+            }
         }
     }
+    //
 }

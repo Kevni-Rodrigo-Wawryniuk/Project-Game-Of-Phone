@@ -13,7 +13,7 @@ public class ControlCanvasSnake : MonoBehaviour
     public bool ScreemSnake;
     [SerializeField] Canvas canvasSnake;
     [SerializeField] TextMeshProUGUI textPoints, lastPointsPlay, lastScore, pauseText;
-    [SerializeField] GameObject bottonReturnSnake, bottonOutGameSnake;
+    [SerializeField] GameObject bottonReturnSnake, bottonOutGameSnake, bottonPause;
 
     // Start is called before the first frame update
     void Start()
@@ -45,6 +45,8 @@ public class ControlCanvasSnake : MonoBehaviour
                 PointStart();
                 BottonReturnAndOutGameDesactivate();
                 pauseText.enabled = false;
+
+                bottonPause.SetActive(false);
             }
             // Cuando se esta jugando
             if (Snake.snake.move == true && Snake.snake.deadSnake == false)
@@ -52,6 +54,7 @@ public class ControlCanvasSnake : MonoBehaviour
 
                 lastScore.text = "Last Score: " + Snake.snake.lastScore;
 
+                bottonPause.SetActive(true);
                 PointsCount();
                 BottonReturnAndOutGameDesactivate();
                 if (GameManager.gameManager.pause == true)
@@ -70,6 +73,8 @@ public class ControlCanvasSnake : MonoBehaviour
                 LastPoints();
                 BottonReturnAndOutGameActive();
                 pauseText.enabled = false;
+
+                bottonPause.SetActive(false);
             }
         }
     }

@@ -257,6 +257,16 @@ public class Snake : MonoBehaviour
         {
             PlayerPrefs.SetInt("LastPoint", pointScreem);
         }
+        
+        if (tailList.Count > 0)
+        {
+            for (int i = 0; i < tailList.Count; i++)
+            {
+                Destroy(tailList[i].gameObject);
+                tailList.RemoveAt(i);
+            }
+        }
+
         transform.position = startPosition;
         distanceFPS = 0.3f;
         timePosition = 0.15f;
@@ -276,6 +286,15 @@ public class Snake : MonoBehaviour
         if (lastScore >= 0 && lastScore < pointScreem)
         {
             PlayerPrefs.SetInt("LastPoint", pointScreem);
+        }
+
+        if (tailList.Count > 0)
+        {
+            for (int i = 0; i < tailList.Count; i++)
+            {
+                Destroy(tailList[i].gameObject);
+                tailList.RemoveAt(i);
+            }
         }
         transform.position = startPosition;
         distanceFPS = 0.3f;

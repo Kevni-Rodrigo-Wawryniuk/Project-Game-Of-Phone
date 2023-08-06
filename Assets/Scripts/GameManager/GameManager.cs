@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 using UnityEngine.UI;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -19,16 +20,21 @@ public class GameManager : MonoBehaviour
     [Header("Games")]
     public int gamesPlay;
     [SerializeField] GameObject[] gamePlayBottons;
+    [SerializeField] Vector3 bottonOn, bottonsOff;
 
     [Header("Pause")]
     public bool pause;
     [SerializeField] GameObject bottonActivePause;
     [SerializeField] Image pauseOn, pauseOff;
 
+    [Header("Coins")]
+    public int coinsScore;
+    [SerializeField] TextMeshProUGUI textCoins, textCoinsSelecton;
+
     [Header("Snake")]
     public bool snakeGame;
     [SerializeField] Canvas canvasSnake;
-    [SerializeField] GameObject scenarySnake;
+    [SerializeField] GameObject scenarySnake;         
 
     // Start is called before the first frame update
     void Start()
@@ -55,9 +61,10 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Games();
         ControlCanvas();
         SelectGame();
+        TextCoinsScore();
+        Games();
     }
     
     /// CONTROL DE LAS PANTALLAS ACTIVAS 
@@ -67,7 +74,8 @@ public class GameManager : MonoBehaviour
         canvasMenus[1].enabled = settings;
         canvasMenus[2].enabled = selectionGames;
     }
-
+    //
+    // BOTON SELECCION DE JUEGOS
     public void PulseBottonSelectionGames() 
     {
         selectionGames = !selectionGames;
@@ -75,6 +83,8 @@ public class GameManager : MonoBehaviour
         settings = false;
         Debug.Log("Botton Selection Games");
     }
+    //
+    // BOTON MENU PRINCIPAL
     public void PulseBottonMainMenu()
     {
         mainMenu = !mainMenu;
@@ -82,6 +92,8 @@ public class GameManager : MonoBehaviour
         settings = false;
         Debug.Log("Botton Main Menu");
     }
+    //
+    // BOTON CONFIGURACIONES
     public void PulseBottonSettings() 
     {
         settings = !settings;
@@ -90,14 +102,28 @@ public class GameManager : MonoBehaviour
 
         Debug.Log("Botton Settings");
     }
+    //
+    // BOTON SALIT DEL JUEGO
     public void pulseBottonExitGame()
     {
         Application.Quit();
         Debug.Log("Botton Exit Game");
     }
-
+    //
+    // MONEDAS PARA COMPRAR NUEVOS JUEGOS
+    private void TextCoinsScore()
+    {
+        textCoins.enabled = mainMenu;
+        textCoins.text = "Coins:" + coinsScore.ToString();
+        
+        textCoinsSelecton.enabled = selectionGames;
+        textCoinsSelecton.text = "Coins: " + coinsScore;
+    }
+    //
 
     ////////////  JUEGOS A SELECCIONAR /////////////////////
+    
+    /// COMPORTAMIENTO DE LOS BOTONES DE SELECCION
     private void SelectGame()
     {
         if(selectionGames == true)
@@ -115,88 +141,84 @@ public class GameManager : MonoBehaviour
                 // juego Fuck Humans
                 case 1:
                     gamePlayBottons[0].GetComponent<Image>().color = Color.white;
-                    gamePlayBottons[0].GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
+                    gamePlayBottons[0].GetComponent<RectTransform>().localScale = bottonsOff;
                     gamePlayBottons[0].GetComponent<RectTransform>().localPosition = new Vector3(-200, 0, 0);
        
                     gamePlayBottons[1].GetComponent<Image>().color = Color.red;
-                    gamePlayBottons[1].GetComponent<RectTransform>().localScale = new Vector3(1.1f, 1.1f, 1);
+                    gamePlayBottons[1].GetComponent<RectTransform>().localScale = bottonOn;
                     gamePlayBottons[1].GetComponent<RectTransform>().localPosition = new Vector3(0, 0, 0);
                     break;
 
                 // Juego de la viborita
                 default:
-                    gamePlayBottons[0].GetComponent<Image>().color = Color.white;
-                    gamePlayBottons[0].GetComponent<RectTransform>().localScale = new Vector3(1.1f, 1.1f, 1);
+                    gamePlayBottons[0].GetComponent<Image>().color = Color.red;
+                    gamePlayBottons[0].GetComponent<RectTransform>().localScale = bottonOn;
                     gamePlayBottons[0].GetComponent<RectTransform>().localPosition = new Vector3(0, 0, 0);
 
 
-                    gamePlayBottons[1].GetComponent<Image>().color = Color.red;
-                    gamePlayBottons[1].GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
+                    gamePlayBottons[1].GetComponent<Image>().color = Color.white;
+                    gamePlayBottons[1].GetComponent<RectTransform>().localScale = bottonsOff;
                     gamePlayBottons[1].GetComponent<RectTransform>().localPosition = new Vector3(200, 0, 0);
                     break;
             }
 
         }
     }  
+    //
 
     ///  SUMAR JUEGO
     public void AddGame()
     {
         gamesPlay++;
     }
-    
+    //
+
     /// RESTAR JUEGO
     public void SubtractGame()
     {
         gamesPlay--;
     }
+    //
 
    ///////////////// JUEGOS A ACTIVAR /////////////////////// 
     private void Games()
     {
-        // Esto es para la imagen que se muestra cuando el juego se pone en pausa
-        pauseOn.enabled = pause;
-        pauseOff.enabled = !pause;
-
-        // El juego de la viboita
-        if (snakeGame == true)
+        if(snakeGame == true)
         {
-            canvasSnake.enabled = true;
             scenarySnake.SetActive(true);
+            canvasSnake.enabled = true; 
             PauseGames();
-            
-            if(Snake.snake.move == true && Snake.snake.deadSnake == false)
-            {
-                bottonActivePause.SetActive(true);
-            }
-            else
-            {
-                bottonActivePause.SetActive(false);
-            }
         }
         else
         {
-            canvasSnake.enabled = false;
             scenarySnake.SetActive(false);
+            canvasSnake.enabled = false;
         }
     }
    ////////////////////////////////////////////////
     
-    // BOTTONS PAUSE
+    // CONTROL AL PAUSAR JUEGO
     private void PauseGames()
     {        
         if(pause == true)
         {
+            pauseOn.enabled = true;
+            pauseOff.enabled = false;
             Time.timeScale = 0;
         }
         else
         {
+
+            pauseOn.enabled = false;
+            pauseOff.enabled = true;
             Time.timeScale = 1;
         }
     }
+    //
+    // BOTON PAUSAR JUEGO
     public void PausarGame()
     {
         pause = !pause;
     }
-
+    //
 }
