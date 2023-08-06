@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+using UnityEngine.Audio;
+using UnityEngine.UI;
+using TMPro;
+
 public class Snake : MonoBehaviour
 {
     public static Snake snake;
@@ -26,9 +30,14 @@ public class Snake : MonoBehaviour
     [Header("End Game")]
     public bool deadSnake;
 
-    [Header("Bottones A Emerger")]
-    [SerializeField] GameObject bottonReturnGamme;
-    public bool bottonReturnActive;
+    [Header("Audio")]
+    [SerializeField] AudioSource food, dead;
+
+    [Header("Points")]
+    public int pointScreem, lastPointsPlay, lastScore;
+
+    [Header("Tutorial")]
+    [SerializeField] GameObject activeTutorial; 
 
     // Start is called before the first frame update
     void Start()
@@ -42,7 +51,7 @@ public class Snake : MonoBehaviour
             snake = this;
         }
 
-        bottonReturnActive = false;
+        lastScore = PlayerPrefs.GetInt("LastPoint", 0);
 
         moveSnake = 0;
 
@@ -94,8 +103,6 @@ public class Snake : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bottonReturnGamme.SetActive(bottonReturnActive);
-
         Moviment();
         DeadSnake();
     }
@@ -103,30 +110,41 @@ public class Snake : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Eggs"))
         {
+            pointScreem++;
+
             tailSelec = Random.Range(0, 3);
         
             tailList.Add(Instantiate(tailprefab[tailSelec], tailList[tailList.Count - 1].transform.position, Quaternion.identity));
             
-            collision.transform.position = new Vector2(Random.Range(-5, 5), Random.Range(-2, 4));
+            collision.transform.position = new Vector2(Random.Range(-11.3f, 11.3f), Random.Range(-6, 4.6f));
+            food.Play();
             Debug.Log("Huevo");
         }
         if (collision.gameObject.CompareTag("Tails"))
         {
             deadSnake = true;
+            dead.Play();
+            lastPointsPlay = pointScreem;
             Debug.Log("Cola");
         }
         if (collision.gameObject.CompareTag("Walls"))
         {
+            lastPointsPlay = pointScreem;
+            dead.Play();
             deadSnake = true;
         }
     }
 
     private void Moviment()
     {
-        if(move == false)
+
+        Tutorial();
+
+        if (move == false)
         {
             if(moveSnake == 1)
             {
+                Invoke("LastPoint", 0.1f);
                 move = true;
             }
         }
@@ -185,11 +203,25 @@ public class Snake : MonoBehaviour
             lastPosition = temp;
         }
     }
+
+    private void Tutorial()
+    {
+
+        if (move == false && deadSnake == false)
+            {
+                activeTutorial.SetActive(true);   
+            }
+
+        if (move == true && deadSnake == false)
+            {
+                activeTutorial.SetActive(false);
+            }
+    }
     public void DeadSnake()
     {
         if(deadSnake == true)
         {
-            bottonReturnActive = true;
+            move = false;
             distanceFPS = 0;
             timePosition = 0;
 
@@ -211,19 +243,49 @@ public class Snake : MonoBehaviour
                 moveSnake = 0;
                 deadSnake = false;
                 move = false;
-                bottonReturnActive = false;
+                pointScreem = 0;
             }
         }
     }
+    public void LastPoint()
+    {
+        lastScore = PlayerPrefs.GetInt("LastPoint", 0);
+    }
     public void BottonReturnGame()
     {
-            transform.position = startPosition;
-            distanceFPS = 0.3f;
-            timePosition = 0.15f;
+        if (lastScore >= 0 && lastScore < pointScreem)
+        {
+            PlayerPrefs.SetInt("LastPoint", pointScreem);
+        }
+        transform.position = startPosition;
+        distanceFPS = 0.3f;
+        timePosition = 0.15f;
+        moveSnake = 0;
+        deadSnake = false;
+        move = false;
+        pointScreem = 0;
+        GameManager.gameManager.pause = false;
+    }
+    public void BottonOutGame()
+    {
+        GameManager.gameManager.mainMenu = true;
+        GameManager.gameManager.settings = false;
+        GameManager.gameManager.selectionGames = false;
+        GameManager.gameManager.snakeGame = false;
 
-            moveSnake = 0;
-            deadSnake = false;
-            move = false;
-            bottonReturnActive = false;   
+        if (lastScore >= 0 && lastScore < pointScreem)
+        {
+            PlayerPrefs.SetInt("LastPoint", pointScreem);
+        }
+        transform.position = startPosition;
+        distanceFPS = 0.3f;
+        timePosition = 0.15f;
+        moveSnake = 0;
+        deadSnake = false;
+        move = false;
+        pointScreem = 0;
+        GameManager.gameManager.pause = false;
+
+        Debug.Log("Salir del Juego De la viborita");
     }
 }

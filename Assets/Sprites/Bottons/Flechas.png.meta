@@ -1,0 +1,1357 @@
+fileFormatVersion: 2
+guid: deae2e33ef778ba47b043074aaf37ba4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1676479940091735870
+    second: Flechas_0
+  - first:
+      213: 8888813821202546252
+    second: Flechas_1
+  - first:
+      213: 2138436512338368832
+    second: Flechas_2
+  - first:
+      213: 7359989106317709526
+    second: Flechas_3
+  - first:
+      213: -816158020447102622
+    second: Flechas_4
+  - first:
+      213: 4170013157151834063
+    second: Flechas_5
+  - first:
+      213: -7109972612996988649
+    second: Flechas_6
+  - first:
+      213: 3365840544734308249
+    second: Flechas_7
+  - first:
+      213: -1819095654861687651
+    second: Flechas_8
+  - first:
+      213: 7844282572059674448
+    second: Flechas_9
+  - first:
+      213: 6003478220056974260
+    second: Flechas_10
+  - first:
+      213: -3046916473694831639
+    second: Flechas_11
+  - first:
+      213: 5648477249860647529
+    second: Flechas_12
+  - first:
+      213: 1815595425121050210
+    second: Flechas_13
+  - first:
+      213: 4803723801864871181
+    second: Flechas_14
+  - first:
+      213: 1526171749758602433
+    second: Flechas_15
+  - first:
+      213: -1399729920486862243
+    second: Flechas_16
+  - first:
+      213: -8620866062731784328
+    second: Flechas_17
+  - first:
+      213: -6463119914426649111
+    second: Flechas_18
+  - first:
+      213: 9130437264554653309
+    second: Flechas_19
+  - first:
+      213: -1560128452424920681
+    second: Flechas_20
+  - first:
+      213: 2132273012338154177
+    second: Flechas_21
+  - first:
+      213: -4979624614406477417
+    second: Flechas_22
+  - first:
+      213: -1833089727497787069
+    second: Flechas_23
+  - first:
+      213: 8255742242084720545
+    second: Flechas_24
+  - first:
+      213: 4884580140201342231
+    second: Flechas_25
+  - first:
+      213: 1383042582109403632
+    second: Flechas_26
+  - first:
+      213: 3329526962566831257
+    second: Flechas_27
+  - first:
+      213: 2488304971511476132
+    second: Flechas_28
+  - first:
+      213: 2587503546573409744
+    second: Flechas_29
+  - first:
+      213: -6734368659392861333
+    second: Flechas_30
+  - first:
+      213: -7510601993958536805
+    second: Flechas_31
+  - first:
+      213: 4444006173986197609
+    second: Flechas_32
+  - first:
+      213: 4861292685513981242
+    second: Flechas_33
+  - first:
+      213: 8844061111676087152
+    second: Flechas_34
+  - first:
+      213: 5693581660778014221
+    second: Flechas_35
+  - first:
+      213: -1035893248579696289
+    second: Flechas_36
+  - first:
+      213: 3086909995745803566
+    second: Flechas_37
+  - first:
+      213: 425168635342912169
+    second: Flechas_38
+  - first:
+      213: -723340975208774691
+    second: Flechas_39
+  - first:
+      213: -7510735861872114062
+    second: Flechas_40
+  - first:
+      213: 3481659587007952843
+    second: Flechas_41
+  - first:
+      213: 8072563882844447381
+    second: Flechas_42
+  - first:
+      213: -2154749897455172231
+    second: Flechas_43
+  - first:
+      213: 7049162696218029627
+    second: Flechas_44
+  - first:
+      213: -6631449078327956796
+    second: Flechas_45
+  - first:
+      213: 6165024467428856461
+    second: Flechas_46
+  - first:
+      213: -3853056373418644038
+    second: Flechas_47
+  - first:
+      213: 4888749828599682206
+    second: Flechas_48
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Lumin
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Flechas_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1792
+        width: 352
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c093c97062fbb8e0800000000000000
+      internalID: -1676479940091735870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_1
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1792
+        width: 352
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4e3c5f43196b5b70800000000000000
+      internalID: 8888813821202546252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_2
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1792
+        width: 512
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04957a49da04dad10800000000000000
+      internalID: 2138436512338368832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1504
+        width: 352
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d0dfc8e81fe32660800000000000000
+      internalID: 7359989106317709526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_4
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1504
+        width: 352
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2691aa6ca9c6ca4f0800000000000000
+      internalID: -816158020447102622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_5
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 1664
+        width: 448
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcf7dbc6fdcded930800000000000000
+      internalID: 4170013157151834063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1088
+        width: 160
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7110f87249d445d90800000000000000
+      internalID: -7109972612996988649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1088
+        width: 64
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 997ee77742ed5be20800000000000000
+      internalID: 3365840544734308249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_8
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1088
+        width: 64
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d94338fc32641c6e0800000000000000
+      internalID: -1819095654861687651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_9
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1088
+        width: 160
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0578761407d7cdc60800000000000000
+      internalID: 7844282572059674448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_10
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1088
+        width: 160
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b35a4322a3a05350800000000000000
+      internalID: 6003478220056974260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_11
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1088
+        width: 64
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eb32254c9d27b5d0800000000000000
+      internalID: -3046916473694831639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_12
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1088
+        width: 64
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96ab1dfb12c636e40800000000000000
+      internalID: 5648477249860647529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_13
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1088
+        width: 160
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26e1a227b6a423910800000000000000
+      internalID: 1815595425121050210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_14
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 1216
+        width: 256
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0d9e39b8514aa240800000000000000
+      internalID: 4803723801864871181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_15
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1408
+        width: 384
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cc0992de1d0e2510800000000000000
+      internalID: 1526171749758602433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_16
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 1280
+        width: 448
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5215ebad09239ce0800000000000000
+      internalID: -1399729920486862243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 544
+        width: 288
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87fc6a2cdf78c5880800000000000000
+      internalID: -8620866062731784328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_18
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 576
+        width: 128
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e5b8df4ea26e46a0800000000000000
+      internalID: -6463119914426649111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_19
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 608
+        width: 128
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d76f4c52154d5be70800000000000000
+      internalID: 9130437264554653309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_20
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 608
+        width: 128
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7919b3d307f495ae0800000000000000
+      internalID: -1560128452424920681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_21
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 576
+        width: 128
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ca5198e10b579d10800000000000000
+      internalID: 2132273012338154177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_22
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 544
+        width: 288
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 799a28fdbc1d4eab0800000000000000
+      internalID: -4979624614406477417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_23
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 832
+        width: 256
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 349a31fda9e8f86e0800000000000000
+      internalID: -1833089727497787069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_24
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 768
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1af85a014d9429270800000000000000
+      internalID: 8255742242084720545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_25
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 416
+        width: 256
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 715f0a502c389c340800000000000000
+      internalID: 4884580140201342231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_26
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 640
+        width: 448
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f9bed796ed813310800000000000000
+      internalID: 1383042582109403632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 288
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99c91e1c12bd43e20800000000000000
+      internalID: 3329526962566831257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_28
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 32
+        width: 128
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4afa7cf103c388220800000000000000
+      internalID: 2488304971511476132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_29
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 64
+        width: 128
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dd429434c8a8e320800000000000000
+      internalID: 2587503546573409744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_30
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 64
+        width: 128
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6b6d5e6267ba82a0800000000000000
+      internalID: -6734368659392861333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_31
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 32
+        width: 128
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b99c2c4874bf4c790800000000000000
+      internalID: -7510601993958536805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_32
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 0
+        width: 288
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9601714e1184cad30800000000000000
+      internalID: 4444006173986197609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_33
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 384
+        width: 384
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3df345f0f7c67340800000000000000
+      internalID: 4861292685513981242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_34
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 32
+        width: 256
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07bac4529ba6cba70800000000000000
+      internalID: 8844061111676087152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_35
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 256
+        width: 448
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d062a56ca5aa30f40800000000000000
+      internalID: 5693581660778014221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_36
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 512
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f598e2d2494cf91f0800000000000000
+      internalID: -1035893248579696289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_37
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1088
+        width: 264
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2df7063948e6da20800000000000000
+      internalID: 3086909995745803566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_38
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 1081
+        width: 264
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aa70470f9086e500800000000000000
+      internalID: 425168635342912169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_39
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 1084
+        width: 264
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd34239273d26f5f0800000000000000
+      internalID: -723340975208774691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_40
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 1084
+        width: 264
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2764357f68184c790800000000000000
+      internalID: -7510735861872114062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 549
+        width: 545
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc73170a2f6515030800000000000000
+      internalID: 3481659587007952843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_42
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 549
+        width: 549
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5926797c412870070800000000000000
+      internalID: 8072563882844447381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_43
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 545
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9750066726ac812e0800000000000000
+      internalID: -2154749897455172231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_44
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 0
+        width: 545
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3ea208cf18a3d160800000000000000
+      internalID: 7049162696218029627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_45
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 3
+        width: 512
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4caab2cb23c58f3a0800000000000000
+      internalID: -6631449078327956796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_46
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 519
+        width: 512
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8250b4e6119e8550800000000000000
+      internalID: 6165024467428856461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_47
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1030
+        width: 512
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abda3da84a1378ac0800000000000000
+      internalID: -3853056373418644038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flechas_48
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1540
+        width: 512
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e949f61411458d340800000000000000
+      internalID: 4888749828599682206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
