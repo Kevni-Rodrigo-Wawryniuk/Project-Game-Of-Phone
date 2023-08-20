@@ -5,6 +5,8 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Events;
+using UnityEngine.EventSystems;
 
 public class Snake : MonoBehaviour
 {
@@ -20,7 +22,12 @@ public class Snake : MonoBehaviour
     [SerializeField] Direction direction;
     [SerializeField] float timePosition,distanceFPS;
     public int moveSnake;
-    public bool rigth, left, down, up;
+    // parametros para la dreccion
+    [SerializeField] Vector2 fingerUp, fingerDown;
+    // la distancia del desliz para determinar la direccion
+    [SerializeField] float minDistance;
+    // Evento que se activa cuando determina el parametro de direccion
+    public static event System.Action<Vector2> onSwipe;
 
     [Header("Move Tails")]
     [SerializeField] GameObject[] tailprefab;
@@ -35,6 +42,7 @@ public class Snake : MonoBehaviour
 
     [Header("Points")]
     public int pointScreem, lastPointsPlay, lastScore;
+    public int pointBuy, onePointBuy;
 
     [Header("Tutorial")]
     [SerializeField] GameObject activeTutorial; 
@@ -50,6 +58,8 @@ public class Snake : MonoBehaviour
         {
             snake = this;
         }
+
+        onePointBuy = 10;
 
         lastScore = PlayerPrefs.GetInt("LastPoint", 0);
 
@@ -119,6 +129,14 @@ public class Snake : MonoBehaviour
             collision.transform.position = new Vector2(Random.Range(-11.3f, 11.3f), Random.Range(-6, 4.6f));
             food.Play();
             Debug.Log("Huevo");
+
+            if(pointBuy == onePointBuy)
+            {
+                GameManager.gameManager.coinsScore++;
+                PlayerPrefs.SetInt("CoinsBuy", GameManager.gameManager.coinsScore);
+                onePointBuy += Random.Range(5,10);
+            }
+
         }
         if (collision.gameObject.CompareTag("Tails"))
         {
@@ -137,6 +155,7 @@ public class Snake : MonoBehaviour
 
     private void Moviment()
     {
+        pointBuy = pointScreem;
 
         Tutorial();
 
@@ -149,50 +168,94 @@ public class Snake : MonoBehaviour
             }
         }
 
-        if(Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            rigth = false;
-            left = false;
-            down = false;
-            up = true;
-        }
-        if(Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            rigth = false;
-            left = false;
-            down = true;
-            up = false;
-        }
-        if(Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            rigth = true;
-            left = false;
-            down = false;
-            up = false;
-        }
-        if(Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
-        { 
-            rigth = false;
-            left = true;
-            down = false;
-            up = false;
-        }
-
-        if (rigth == true)
-        {
-            direction = Direction.rigth;
-        }else if(left == true)
-        {
-            direction = Direction.left;
-        }else if(up == true)
-        {
-            direction = Direction.up;
-        }else if(down == true)
-        {
-            direction = Direction.down;
-        }
-
+        DetectSwipe();
     }
+    ///////////////////////////////////// DIRECCIONES DETERMINADAS ////////////////////////////////////////
+
+    // Esto es para el juego de la viborita se usaria para direcciones ya determinadas
+    // osea solo moverte entre cuatro direcciones que son arriba, abajo, izquierda, derecha
+    private void DetectSwipe()
+    {
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+
+            if (touch.phase == TouchPhase.Began)
+            {
+                fingerDown = touch.position;
+                fingerUp = touch.position;
+            }
+
+            if (touch.phase == TouchPhase.Moved)
+            {
+                fingerUp = touch.position;
+            }
+
+            if (touch.phase == TouchPhase.Ended)
+            {
+                fingerUp = touch.position;
+                CheckSwipe();
+            }
+        }
+    }
+    void CheckSwipe()
+    {
+        // darle los valores del touch a una variable
+        Vector2 swipeDelta = fingerUp - fingerDown;
+
+        // la magnitud del desliz del dedo debe ser mayor a la distancia minima
+        if (swipeDelta.magnitude > minDistance)
+        {
+            // normalizar la maginitud del desliz
+            swipeDelta.Normalize();
+
+            // detectar el angulo de desplazamiento
+            float angel = Mathf.Atan2(swipeDelta.y, swipeDelta.x) * Mathf.Rad2Deg;
+
+            // convertir el angulo en un valor positivo en un rango de 0-360 grados
+            if (angel < 0)
+            {
+                angel += 360;
+            }
+
+            // determinar la direccion en funcion del angulo Se puede usar un enum para esto como en el juego de la snake
+
+            // Derecha
+            if (angel < 45f || angel > 315f)
+            {
+                moveSnake = 1;
+                Debug.Log("derecha 0");
+                direction = Direction.rigth;
+            }
+            // Arriba
+            else if (angel > 45f && angel < 135f)
+            {
+                moveSnake = 1;
+                Debug.Log("arriba 1");
+                direction = Direction.up;
+            }
+            // izquierda
+            else if (angel > 135f && angel < 225f)
+            {
+                moveSnake = 1;
+                Debug.Log("izquierda 2");
+                direction = Direction.left;
+            }
+            // Abajo
+            else
+            {
+                moveSnake = 1;
+                Debug.Log("abajo 4");
+                direction = Direction.down;
+            }
+
+            // llamamos al evento onSwipe y pasa la direccion del deslizamiento a un parametro
+            onSwipe?.Invoke(swipeDelta);
+        }
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////////////
+
     private void MoveTails()
     {
         for (int i = 0; i < tailList.Count; i++)
@@ -225,7 +288,7 @@ public class Snake : MonoBehaviour
             distanceFPS = 0;
             timePosition = 0;
 
-            if (tailList.Count > 0)
+            if (tailList.Count > 1)
             {
                 for (int i = 1; i < tailList.Count; i++)
                 {
@@ -257,8 +320,8 @@ public class Snake : MonoBehaviour
         {
             PlayerPrefs.SetInt("LastPoint", pointScreem);
         }
-        
-        if (tailList.Count > 0)
+     
+        if (tailList.Count > 1)
         {
             for (int i = 0; i < tailList.Count; i++)
             {
@@ -274,6 +337,7 @@ public class Snake : MonoBehaviour
         deadSnake = false;
         move = false;
         pointScreem = 0;
+        Time.timeScale = 1;
         GameManager.gameManager.pause = false;
     }
     public void BottonOutGame()
@@ -288,7 +352,7 @@ public class Snake : MonoBehaviour
             PlayerPrefs.SetInt("LastPoint", pointScreem);
         }
 
-        if (tailList.Count > 0)
+        if (tailList.Count > 1)
         {
             for (int i = 0; i < tailList.Count; i++)
             {
@@ -304,6 +368,7 @@ public class Snake : MonoBehaviour
         move = false;
         pointScreem = 0;
         GameManager.gameManager.pause = false;
+        Time.timeScale = 1;
 
         Debug.Log("Salir del Juego De la viborita");
     }

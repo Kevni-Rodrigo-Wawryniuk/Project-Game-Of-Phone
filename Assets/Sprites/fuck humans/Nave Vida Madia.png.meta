@@ -1,16 +1,22 @@
 fileFormatVersion: 2
-guid: dd19eeba1e09e2d4c9fcd081f6ab9322
+guid: 87199661f56cdad45a2a39078fad5c0e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6302563758487680414
-    second: nave_0
+      213: -5769828949851157249
+    second: Nave Vida Madia_0
   - first:
-      213: 4835273809465364751
-    second: nave_1
+      213: 3888607984055639645
+    second: Nave Vida Madia_1
   - first:
-      213: 1462950513300670661
-    second: nave_2
+      213: 327324354040679743
+    second: Nave Vida Madia_2
+  - first:
+      213: 7376775754480537448
+    second: Nave Vida Madia_3
+  - first:
+      213: 432111073239405616
+    second: Nave Vida Madia_4
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -173,13 +179,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: nave_0
+      name: Nave Vida Madia_0
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1440
-        width: 448
-        height: 224
+        x: 414
+        y: 4830
+        width: 867
+        height: 420
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +193,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26a471177abc888a0800000000000000
-      internalID: -6302563758487680414
+      spriteID: ffc4b55d3237defa0800000000000000
+      internalID: -5769828949851157249
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nave_1
+      name: Nave Vida Madia_1
       rect:
         serializedVersion: 2
-        x: 1152
-        y: 1440
-        width: 448
-        height: 224
+        x: 2461
+        y: 4830
+        width: 870
+        height: 420
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +214,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f01deec49e75a1340800000000000000
-      internalID: 4835273809465364751
+      spriteID: d5e5268db5c17f530800000000000000
+      internalID: 3888607984055639645
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nave_2
+      name: Nave Vida Madia_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 416
-        width: 448
-        height: 224
+        x: 414
+        y: 2781
+        width: 867
+        height: 420
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,8 +235,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c80345adb17d4410800000000000000
-      internalID: 1462950513300670661
+      spriteID: f3dcde804c3ea8400800000000000000
+      internalID: 327324354040679743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nave Vida Madia_3
+      rect:
+        serializedVersion: 2
+        x: 2461
+        y: 2781
+        width: 870
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86fc68107729f5660800000000000000
+      internalID: 7376775754480537448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nave Vida Madia_4
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 735
+        width: 867
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03492ff4bba2ff500800000000000000
+      internalID: 432111073239405616
       vertices: []
       indices: 
       edges: []

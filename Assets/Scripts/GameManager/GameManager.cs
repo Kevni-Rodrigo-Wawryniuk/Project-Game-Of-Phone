@@ -29,12 +29,17 @@ public class GameManager : MonoBehaviour
 
     [Header("Coins")]
     public int coinsScore;
+    [SerializeField] GameObject imageCoinMainMenu;
     [SerializeField] TextMeshProUGUI textCoins, textCoinsSelecton;
 
     [Header("Snake")]
     public bool snakeGame;
     [SerializeField] Canvas canvasSnake;
-    [SerializeField] GameObject scenarySnake;         
+    [SerializeField] GameObject scenarySnake;
+
+    [Header("Fuck Humans")]
+    public bool fuckHumanGame;
+    [SerializeField] GameObject scenaryFuckHuman;
 
     // Start is called before the first frame update
     void Start()
@@ -48,6 +53,8 @@ public class GameManager : MonoBehaviour
         {
             gameManager = this;
         }
+
+        coinsScore = PlayerPrefs.GetInt("CoinsBuy", 0);
 
         //////////// MENUS ///////////////
         mainMenu = true;
@@ -185,6 +192,7 @@ public class GameManager : MonoBehaviour
     {
         if(snakeGame == true)
         {
+            fuckHumanGame = false;
             scenarySnake.SetActive(true);
             canvasSnake.enabled = true; 
             PauseGames();
@@ -193,6 +201,17 @@ public class GameManager : MonoBehaviour
         {
             scenarySnake.SetActive(false);
             canvasSnake.enabled = false;
+        }
+
+        if(fuckHumanGame == true)
+        {
+            snakeGame = false;
+            scenaryFuckHuman.SetActive(true);
+            PauseGames();
+        }
+        else
+        {
+            scenaryFuckHuman.SetActive(false);
         }
     }
    ////////////////////////////////////////////////

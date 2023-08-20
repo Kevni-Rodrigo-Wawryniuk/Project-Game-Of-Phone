@@ -29,53 +29,7 @@ public class BottonSnake : MonoBehaviour
     /// /////////////////////////////////// ESTO TAMBIEN SE PUEDE USAR EN BOTONES ////////////////////////////////////
 
     // Esto es para pulsar los botones en pantalla para mover a la vibora
-    public void PulseBottonRigth()
-    {
-        if (Snake.snake.move == false)
-        {
-            Snake.snake.moveSnake = 1;
-        }
 
-        Snake.snake.rigth = true;
-        Snake.snake.left = false;
-        Snake.snake.up = false;
-        Snake.snake.down = false;
-    }
-    public void PulseBottonLeft()
-    {
-        if (Snake.snake.move == false)
-        {
-            Snake.snake.moveSnake = 1;
-        }
-
-        Snake.snake.rigth = false;
-        Snake.snake.left = true;
-        Snake.snake.up = false;
-        Snake.snake.down = false;
-    }
-    public void PulseBottonDown()
-    {
-        if (Snake.snake.move == false)
-        {
-            Snake.snake.moveSnake = 1;
-        }
-
-        Snake.snake.rigth = false;
-        Snake.snake.left = false;
-        Snake.snake.up = false;
-        Snake.snake.down = true;
-    }
-    public void PulseBottonUp()
-    {
-        if (Snake.snake.move == false)
-        {
-            Snake.snake.moveSnake = 1;
-        }
-        Snake.snake.rigth = false;
-        Snake.snake.left = false;
-        Snake.snake.up = true;
-        Snake.snake.down = false;
-    }
     /// <summary>
     /// ///////////////////////////////////////////////////////////////////
     /// </summary>
@@ -149,25 +103,25 @@ public class BottonSnake : MonoBehaviour
             if (angel < 45f || angel > 315f)
             {
                 Debug.Log("derecha 0");
-                PulseBottonRigth();
+       
             }
             // Arriba
             else if (angel > 45f && angel < 135f)
             {
                 Debug.Log("arriba 1");
-                PulseBottonUp();
+   
             }
             // izquierda
             else if (angel > 135f && angel < 225f)
             {
                 Debug.Log("izquierda 2");
-                PulseBottonLeft();
+
             }
             // Abajo
             else
             {
                 Debug.Log("abajo 4");
-                PulseBottonDown();
+     
             }
 
             // llamamos al evento onSwipe y pasa la direccion del deslizamiento a un parametro

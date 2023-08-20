@@ -12,7 +12,7 @@ public class ControlCanvasSnake : MonoBehaviour
     [Header("Screem Snake")]
     public bool ScreemSnake;
     [SerializeField] Canvas canvasSnake;
-    [SerializeField] TextMeshProUGUI textPoints, lastPointsPlay, lastScore, pauseText;
+    [SerializeField] TextMeshProUGUI textPoints, lastPointsPlay, lastScore, pauseText, CoinsGameManagerText;
     [SerializeField] GameObject bottonReturnSnake, bottonOutGameSnake, bottonPause;
 
     // Start is called before the first frame update
@@ -85,14 +85,17 @@ public class ControlCanvasSnake : MonoBehaviour
         textPoints.enabled = false;
         lastPointsPlay.enabled = false;
         lastScore.enabled = false;
+        CoinsGameManagerText.enabled = false;
     }
     private void PointsCount()
     {
         ScreemSnake = true;
         textPoints.enabled = true;
         textPoints.text = "Points: " + Snake.snake.pointScreem;
+        CoinsGameManagerText.text = "Coins: " + GameManager.gameManager.coinsScore;
         lastPointsPlay.enabled = false;
         lastScore.enabled = true;
+        CoinsGameManagerText.enabled = true;
     }
     private void LastPoints()
     {
@@ -101,6 +104,7 @@ public class ControlCanvasSnake : MonoBehaviour
         lastPointsPlay.enabled = true;
         lastPointsPlay.text = "Last Points Play: " + Snake.snake.lastPointsPlay;
         lastScore.enabled = true;
+        CoinsGameManagerText.enabled = false;
     }
 
     // Botones de volver a jugar y salir del juego

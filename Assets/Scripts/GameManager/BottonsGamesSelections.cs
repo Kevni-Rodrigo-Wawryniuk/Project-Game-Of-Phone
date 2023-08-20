@@ -59,6 +59,7 @@ public class BottonsGamesSelections : MonoBehaviour
             GameManager.gameManager.selectionGames = false;
 
             GameManager.gameManager.snakeGame = true;
+            GameManager.gameManager.fuckHumanGame = false;
             Debug.Log("Jugar al juego de la viborita");
         }
     }
@@ -83,9 +84,15 @@ public class BottonsGamesSelections : MonoBehaviour
                 Debug.Log("Requieres conseguir 10 monedas para desbloquear este juego");
             }
 
-            if (buyFuckHumanGame == 1)
+            if (buyFuckHumanGame >= 1)
             {
                 Debug.Log("Jugar el juego de la nave");
+                GameManager.gameManager.fuckHumanGame = true;
+                GameManager.gameManager.snakeGame = false;
+
+                GameManager.gameManager.mainMenu = false;
+                GameManager.gameManager.settings = false;
+                GameManager.gameManager.selectionGames = false;
             }
             else
             {
