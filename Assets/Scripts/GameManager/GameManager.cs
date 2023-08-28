@@ -40,6 +40,7 @@ public class GameManager : MonoBehaviour
     [Header("Fuck Humans")]
     public bool fuckHumanGame;
     [SerializeField] GameObject scenaryFuckHuman;
+    [SerializeField] Canvas canvasFuckHumans;
 
     // Start is called before the first frame update
     void Start()
@@ -206,11 +207,13 @@ public class GameManager : MonoBehaviour
         if(fuckHumanGame == true)
         {
             snakeGame = false;
+            canvasFuckHumans.enabled = true;
             scenaryFuckHuman.SetActive(true);
             PauseGames();
         }
         else
         {
+            canvasFuckHumans.enabled = false;
             scenaryFuckHuman.SetActive(false);
         }
     }

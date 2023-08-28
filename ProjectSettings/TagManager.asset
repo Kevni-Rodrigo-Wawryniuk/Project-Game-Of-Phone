@@ -9,6 +9,9 @@ TagManager:
   - Tails
   - CinemachineTarget
   - Walls
+  - AlienShip
+  - BulletHumans
+  - Coins
   layers:
   - Default
   - TransparentFX
